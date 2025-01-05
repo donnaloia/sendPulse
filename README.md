@@ -11,12 +11,11 @@ Anyway, there is a smorgosborg of technologies and frameworks that I've used to 
 - [NextJS](https://nextjs.org/) for the frontend
 - [React](https://reactjs.org/) for the frontend
 - [EffectTS](https://effect.ts/) for the frontend
-- [MongoDB](https://www.mongodb.com/) for the permissionsdatabase
-- [PostgreSQL](https://www.postgresql.org/) for the database
-- [Redis](https://redis.io/) for the cache
-- [Prometheus](https://prometheus.io/) for the monitoring
+- [MongoDB](https://www.mongodb.com/) for the permissions database
+- [PostgreSQL](https://www.postgresql.org/) for the business logic database
+- [Redis](https://redis.io/) for the permissions cache
+- [Prometheus](https://prometheus.io/) for monitoring
 - [Grafana](https://grafana.com/) for the monitoring dashboard
-- [Kubernetes](https://kubernetes.io/) for the container orchestration
 
 I've also used a lot of other technologies and frameworks to build this project.
 - [Terraform](https://www.terraform.io/) for the infrastructure as code
