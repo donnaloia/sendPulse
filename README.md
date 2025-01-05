@@ -1,6 +1,6 @@
 # What is sendPulse?
 
-Put simply,sendPulse is a platform for sending emails to users.
+Put simply, sendPulse is a platform for sending emails to users.
 I started this project for fun after I got turned out for a job at Postscript that I was really excited about.
 I figured I could build something similar in a weekend, maybe the'd be impressed and hire me the next time they were hiring.
 
