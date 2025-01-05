@@ -1,4 +1,4 @@
-# sendPulse?
+# sendPulse
 
 Put simply, sendPulse is a platform for organizing and sending emails to users in bulk.
 I started this project for fun after I got turned out for a job at Postscript that I was really excited about.
