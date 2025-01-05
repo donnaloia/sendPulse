@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: business-logic-postgres
+spec:
+  serviceName: business-logic-postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: business-logic-postgres
+  template:
+    metadata:
+      labels:
+        app: business-logic-postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:latest
+        ports:
+        - containerPort: 5432
+        env:
+        - name: POSTGRES_USER
+          value: postgres
+        - name: POSTGRES_PASSWORD
+          value: postgres  # Should use Secret in production
+        - name: POSTGRES_DB
+          value: sendpulse
+        volumeMounts:
+        - name: postgres-storage
+          mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+  - metadata:
+      name: postgres-storage
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: business-logic-postgres
+spec:
+  selector:
+    app: business-logic-postgres
+  ports:
+  - port: 5432 

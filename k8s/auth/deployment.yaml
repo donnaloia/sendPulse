@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-service
+  template:
+    metadata:
+      labels:
+        app: auth-service
+    spec:
+      containers:
+      - name: auth-service
+        image: bendonnaloia/authentication-service:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DB_HOST
+          value: "auth-db"
+        - name: DB_PORT
+          value: "5433"
+        - name: DB_USER
+          value: "admin"
+        - name: DB_PASSWORD
+          value: "admin"  # Should use Secret in production
+        - name: DB_DATABASE
+          value: "auth_database"
+        - name: SECRET_KEY
+          value: "temp_secret"  # Should use Secret in production
+        - name: DATABASE_URL
+          value: "postgresql://admin:admin@auth-db:5433/auth_database"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-service
+spec:
+  selector:
+    app: auth-service
+  ports:
+  - port: 8081
+    targetPort: 8000 
