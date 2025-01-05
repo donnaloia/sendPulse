@@ -6,11 +6,11 @@ I figured if I could build something similar in a weekend, maybe they'd be impre
 
 Anyway, there is a smorgosborg of technologies and frameworks that I've used to build this project.  
 
-- [Gleam](https://gleam.run/) for the authentication and permissions service
+- [Gleam](https://gleam.run/) for the authentication AND permissions service
 - [Go](https://go.dev/) for the business logic service
 - [NextJS](https://nextjs.org/) for the frontend
 - [React](https://reactjs.org/) for the frontend
-- [EffectTS](https://effect.ts/) for the business logic service
+- [EffectTS](https://effect.ts/) for the frontend
 - [MongoDB](https://www.mongodb.com/) for the permissionsdatabase
 - [PostgreSQL](https://www.postgresql.org/) for the database
 - [Redis](https://redis.io/) for the cache
