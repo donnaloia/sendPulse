@@ -2,11 +2,11 @@
 
 Put simply, sendPulse is a platform for sending emails to users.
 I started this project for fun after I got turned out for a job at Postscript that I was really excited about.
-I figured I could build something similar in a weekend, maybe the'd be impressed and hire me the next time they were hiring.
+I figured if I could build something similar in a weekend, maybe they'd be impressed and hire me the next time around.
 
 Anyway, there is a smorgosborg of technologies and frameworks that I've used to build this project.  
 
-- [Gleam](https://gleam.run/) for the authentication service
+- [Gleam](https://gleam.run/) for the authentication and permissions service
 - [Go](https://go.dev/) for the business logic service
 - [NextJS](https://nextjs.org/) for the frontend
 - [React](https://reactjs.org/) for the frontend
