@@ -4,7 +4,7 @@ Put simply, sendPulse is a platform for organizing and sending emails to users i
 I started this project for fun after I got turned down for a job at Postscript that I was really excited about.
 I figured if I could build something similar in a weekend, maybe they'd be impressed and at least engage in a conversation with me about how I think about system design.
 
-Here is a system design diagram of the project in it's current state:
+
 ![sendPulse Diagram](./system-design/diagrams/sendpulse-sd-diagram-2.png)
 
 
@@ -13,7 +13,7 @@ Anyway, there is a smorgosborg of technologies and frameworks that I've used to 
 - [Gleam](https://gleam.run/) for the authentication AND permissions service
 - [Go](https://go.dev/) for the business logic service
 - [NextJS](https://nextjs.org/) for the frontend
-- [React](https://reactjs.org/) for the frontend
+- [ReactJS](https://reactjs.org/) for the frontend
 - [EffectTS](https://effect.ts/) for the frontend
 - [MongoDB](https://www.mongodb.com/) for the permissions database
 - [PostgreSQL](https://www.postgresql.org/) for the business logic database
