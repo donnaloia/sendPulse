@@ -2,7 +2,11 @@
 
 Put simply, sendPulse is a platform for organizing and sending emails to users in bulk.
 I started this project for fun after I got turned down for a job at Postscript that I was really excited about.
-I figured if I could build something similar in a weekend, maybe they'd be impressed and hire me the next time around.
+I figured if I could build something similar in a weekend, maybe they'd be impressed and at least engage in a conversation with me about how I think about system design.
+
+Here is a system design diagram of the project in it's current state:
+![sendPulse Diagram](./system-design/diagrams/sendpulse-sd-diagram-2.png)
+
 
 Anyway, there is a smorgosborg of technologies and frameworks that I've used to build this project.  
 
@@ -23,9 +27,6 @@ I've also used a lot of other technologies and frameworks to build this project.
 - [Kubernetes](https://kubernetes.io/) for the container orchestration
 - [GitHub Actions](https://github.com/features/actions) for the CI/CD pipeline
 
-Here is a diagram of the project:
-
-![sendPulse Diagram](./system-design/diagrams/sendpulse-sd-diagram-2.png)
 
 There are a lot of things that I would change about this project if I were to do it again or continue working on it and I think there's a lot of great conversations to be had there.
 
