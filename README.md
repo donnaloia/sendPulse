@@ -1,4 +1,4 @@
-# sendPulse ϟ 
+# sendPulse $\textcolor{teal}{\textsf{ϟ}}$
 
 Put simply, sendPulse is a platform for organizing and sending emails to users in bulk.
 I started this project for fun after I got turned down for a job at Postscript that I was really excited about.
