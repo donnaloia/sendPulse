@@ -1,0 +1,79 @@
+# Kubernetes
+kubeconfig
+*.kubeconfig
+.kube/
+
+# Environment variables and secrets
+.env
+*.env
+.env.*
+secrets/
+*.secret
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraformrc
+terraform.rc
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Binary files
+bin/
+*.bin
+
+# Package files
+*.tar
+*.gz
+*.zip
+*.rar
+
+# Local development files
+local/
+dev/
+*.local
+
+# Certificate files
+*.pem
+*.crt
+*.key
+*.csr
+
+# Helm
+charts/*/charts
+charts/*/requirements.lock
+.helm/ 
