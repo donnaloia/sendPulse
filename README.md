@@ -35,7 +35,7 @@ There are a lot of things that I would change about this project if I were to do
 
 - [Authentication Service](https://github.com/donnaloia/authentication-service)
 - [Permissions Service](https://github.com/donnaloia/permissions-service)
-- [Business Logic Service](https://github.com/donnaloia/email-campaign-service)
+- [Email Campaign Service](https://github.com/donnaloia/email-campaign-service)
 - [Frontend Service](https://github.com/donnaloia/sendPulse-frontend)
 
 
