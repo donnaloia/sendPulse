@@ -4,9 +4,6 @@ kubeconfig
 .kube/
 
 # Environment variables and secrets
-.env
-*.env
-.env.*
 secrets/
 *.secret
 

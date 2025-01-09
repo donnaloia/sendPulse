@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: business-logic
-        image: business-logic:latest  # You'll need to specify your actual image
+        image: bendonnaloia/email-campaign-service:latest  # Updated to match your Docker Hub image
         ports:
         - containerPort: 8080
         env:

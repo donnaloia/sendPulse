@@ -75,7 +75,6 @@ services:
     image: bendonnaloia/permissions-service:latest
     pull_policy: always
     container_name: permissions-service
-    build: .
     ports:
       - "8000:8000"
     environment:
@@ -141,6 +140,8 @@ services:
   frontend:
     image: bendonnaloia/sendpulse-frontend:latest
     container_name: sendpulse-frontend
+    env_file:
+      - ./local_vars/.env
     ports:
       - "3000:3000"
     depends_on:
@@ -172,7 +173,7 @@ services:
     image: grafana/grafana
     container_name: permissions-grafana
     ports:
-      - 3000:3000
+      - 3001:3000
     restart: unless-stopped
     environment:
       - GF_SECURITY_ADMIN_USER=admin
