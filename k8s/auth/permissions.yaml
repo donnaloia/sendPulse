@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: permissions-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: permissions-service
+  template:
+    metadata:
+      labels:
+        app: permissions-service
+    spec:
+      containers:
+      - name: permissions-service
+        image: bendonnaloia/permissions-service:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DB_HOST
+          value: "mongodb"
+        - name: DB_PORT
+          value: "27017"
+        - name: DB_USER
+          value: "admin"
+        - name: DB_PASSWORD
+          value: "password"  # Should use Secret in production
+        - name: REDIS_HOST
+          value: "redis"
+        - name: REDIS_PASSWORD
+          value: "password"  # Should use Secret in production
+        - name: SECRET_KEY
+          value: "temp_secret"  # Should use Secret in production
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: permissions-service
+spec:
+  selector:
+    app: permissions-service
+  ports:
+  - port: 8000
+    targetPort: 8000 
